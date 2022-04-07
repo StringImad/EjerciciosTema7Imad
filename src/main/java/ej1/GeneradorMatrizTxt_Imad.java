@@ -17,7 +17,7 @@ public class GeneradorMatrizTxt_Imad {
     public static void main(String[] args) {
         // Fichero a crear. Ruta relativa a la carpeta raíz del proyecto
         String idfichero = "matriz.txt";
-        int numDefilas = 10000;
+        int numDefilas = 4;
         int numDeColumnas = 4;
 
         // Array a escribir
