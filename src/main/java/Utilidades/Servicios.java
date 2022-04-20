@@ -32,5 +32,6 @@ public class Servicios {
      public static int generadorNumeroAleatorioEntreDosRangos(int RANGO_MIN, int RANGO_MAX) {
         Random aleatorio = new Random();
         return aleatorio.nextInt(RANGO_MAX - RANGO_MIN + 1) + RANGO_MIN;
+      
     }
 }

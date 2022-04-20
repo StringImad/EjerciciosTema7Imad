@@ -9,6 +9,7 @@ import static Utilidades.Servicios.generadorNumeroAleatorioEntreDosRangos;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -32,11 +33,9 @@ public class Creador75lineas {
 
             // Usamos metodo write() para escribir en el buffer
             for (int i = 0; i < 75; i++) {
-                flujo.write(letrasGeneradas()+"\n");
-
+                flujo.write(letrasGeneradas() + "\n");
             }
             // Metodo newLine() añade línea en blanco
-            //   flujo.newLine();
             //}
             // Metodo flush() guarda cambios en disco 
             flujo.flush();
@@ -48,15 +47,24 @@ public class Creador75lineas {
     }
 
     public static String letrasGeneradas() {
-        String letras="";
-        int letra = 0;
-       // for (int i = 0; i < 75; i++) {
-            do {
-                letra = generadorNumeroAleatorioEntreDosRangos(65, 90);
-                letras += (char) generadorNumeroAleatorioEntreDosRangos(65, 90) + "";
-
-            } while (letra != 47 && letra != 67);
-      //  }
+        String letras = "";
+        int letra;
+        do {
+           
+            letra = letrasGeneradasAleatorias();
+            letras += (char) letra + ";";
+        } while (letra != 71 &&letra != 103);
         return letras;
     }
+
+    public static int letrasGeneradasAleatorias() {
+        Random aleatorio = new Random();
+        if (aleatorio.nextBoolean()) {
+            return generadorNumeroAleatorioEntreDosRangos(65, 90);
+        } else {
+            return generadorNumeroAleatorioEntreDosRangos(97, 122);
+
+        }
+    }
+
 }
