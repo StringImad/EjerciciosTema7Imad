@@ -5,6 +5,7 @@
 package ej10;
 
 import ej4.MetodosNecesarios;
+import ej4.Vehiculo;
 import ej7_ej9.Ej7LecturaEjer4;
 
 import java.io.File;
@@ -18,6 +19,9 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  *
@@ -34,6 +38,24 @@ public class Ejer10 {
         copiarFichero("./turismos.csv", "./Copias/turismos.csv");
         System.out.println("--------------------------listando ficheros en la carpeta copias----------------------------");
         mostrarFicherosCarpeta("./Copias");
+
+        leerFicherosCarpeta("./Copias");
+
+        ArrayList<Vehiculo> listaVehiculos = leerFicherosCarpeta("./Copias");
+
+        for (Vehiculo listaVehiculo : listaVehiculos) {
+
+            System.out.println(listaVehiculo.getAtributos());
+
+        }
+        
+        List<Vehiculo>lista = listaVehiculos;
+        lista.stream()
+                .sorted((v1, v2) -> v1.getBastidor().compareTo(v2.getBastidor()))
+                .collect(Collectors.toList())
+                .forEach(System.out::println);
+
+        
     }
 
     public static void copiarFichero(String ficheroACopiar, String ruta) {
@@ -42,6 +64,7 @@ public class Ejer10 {
         try {
 
             Files.copy(origen, destino, StandardCopyOption.REPLACE_EXISTING);
+            System.out.println("Archivo copiando con exito");
         } catch (IOException e) {
             System.out.println("Problema copiando el archivo.");
 
@@ -61,4 +84,19 @@ public class Ejer10 {
         }
 
     }
+
+    public static ArrayList<Vehiculo> leerFicherosCarpeta(String ruta) {
+        ArrayList<Vehiculo> listaVehiculos = new ArrayList<>();
+        File f = new File(ruta);
+        if (f.exists()) {
+            File[] ficheros = f.listFiles();            
+            for (File file2 : ficheros) {
+                listaVehiculos.addAll(Ej7LecturaEjer4.leerFicheroScanner(file2.getName()));
+            }
+        } else {
+            System.out.println("El directorio a listar no existe");
+        }
+        return listaVehiculos;
+    }
+
 }

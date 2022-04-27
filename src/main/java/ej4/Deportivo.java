@@ -36,4 +36,9 @@ public class Deportivo extends Vehiculo {
         return super.getAtributos() + ":" + this.cilindrada;
     }
 
+    @Override
+    public String toString() {
+        return super.getAtributos() + ":" + this.cilindrada;
+    }
+
 }

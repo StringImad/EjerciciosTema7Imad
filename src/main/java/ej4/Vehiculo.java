@@ -95,6 +95,11 @@ public class Vehiculo {
         this.disponible = disponible;
     }
 
+    @Override
+    public String toString() {
+        return bastidor + ":" + matricula + ":" + marca + ":" + modelo + ":" + color + ":" + tarifa + ":" + disponible;
+    }
+
     public String getAtributos() {
         return bastidor + ":" + matricula + ":" + marca + ":" + modelo + ":" + color + ":" + tarifa + ":" + disponible;
     }
