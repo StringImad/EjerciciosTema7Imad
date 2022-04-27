@@ -20,7 +20,13 @@ public class Vehiculo {
 // se suponen creados los métodos ‘get’ y ‘set’ de la clase
 
     public Vehiculo() {
-       
+       matricula = MetodosNecesarios.crearMatricula();
+       bastidor = MetodosNecesarios.crearBastidor();
+       marca= MetodosNecesarios.crearMarca();
+       modelo = MetodosNecesarios.crearModelo();
+       color = MetodosNecesarios.crearColor();
+       tarifa = MetodosNecesarios.crearTarifa();
+       disponible = true;
     }
 
     public Vehiculo(Long bastidor, String matricula, String marca, String modelo, String color, double tarifa) {
@@ -90,7 +96,7 @@ public class Vehiculo {
     }
 
     public String getAtributos() {
-        return "bastidor= " + bastidor + ", matricula=" + matricula + ", marca=" + marca + ", modelo=" + modelo + ", color=" + color + ", tarifa=" + tarifa + ", disponible=" + disponible;
+        return bastidor + ":" + matricula + ":" + marca + ":" + modelo + ":" + color + ":" + tarifa + ":" + disponible;
     }
 
  
