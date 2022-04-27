@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ej7;
+package ej7_ej9;
 
 import ej4.Deportivo;
 import ej4.Furgoneta;
@@ -21,7 +21,7 @@ import java.util.Scanner;
  *
  * @author MSI
  */
-public class LecturaEjer4 {
+public class Ej7LecturaEjer4 {
 
     public static void ordenarAlquilerMatricula(ArrayList<Vehiculo> lista) {
         //Ponemos el cast de int porque solo nos interesa saber si es número positivo, negativo o 0

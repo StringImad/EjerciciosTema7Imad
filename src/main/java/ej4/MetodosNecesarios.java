@@ -40,7 +40,7 @@ public class MetodosNecesarios {
     }
 
     public static double crearTarifa() {
-        String[] nombres = "120,300,4000,60,90,50,800".split("\\,");
+        String[] nombres = "120,300,4000,60,90,50,805".split("\\,");
         String tarifaAleatoria = nombres[generadorNumeroAleatorioEntreDosRangos(0, 6)];
 
         return Double.parseDouble(tarifaAleatoria);
