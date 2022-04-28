@@ -19,8 +19,8 @@ import org.apache.commons.lang3.RandomStringUtils;
 public class MetodosNecesarios {
 
     public static String crearMarca() {
-        String[] nombres = "Seat,Audi,Mercedes,Bmw,LandRover,Opel,Ford".split("\\,");
-        String marcaAleatoria = nombres[generadorNumeroAleatorioEntreDosRangos(0, 6)];
+        String[] nombres = "Seat,Audi,Mercedes,Bmw,LandRover,Opel,Ford,Citroen".split("\\,");
+        String marcaAleatoria = nombres[generadorNumeroAleatorioEntreDosRangos(0, 7)];
 
         return marcaAleatoria;
     }
@@ -47,7 +47,7 @@ public class MetodosNecesarios {
     }
 
     public static Long crearBastidor() {
-        String bastidorS = RandomStringUtils.randomNumeric(15);
+        String bastidorS = RandomStringUtils.randomNumeric(15).replace("0", "1");
 
         return Long.parseLong(bastidorS);
 

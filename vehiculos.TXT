@@ -1,31 +1,31 @@
 TipoVehiculo:Matricula:Marca:Modelo:Color:Precio:Bastidor:Disponible
-2 - :230806131329223:2877WBW:Mercedes:mondeo:negro:90.0:true:5:false
-2 - :778608727519794:7451CGF:Bmw:m3:blanco:800.0:true:7:false
-2 - :625041168844021:5446CWV:Opel:Leon:morado:120.0:true:5:false
-2 - :227256509941921:5730LQH:Mercedes:Leon:Verde:50.0:true:5:true
-2 - :2461474798121:6366BXF:Mercedes:Leon:Verde:120.0:true:8:true
-2 - :974592075309967:5964NWF:Bmw:opc:Amarillo:60.0:true:9:true
-2 - :594443541489567:0790RQK:Mercedes:opc:Amarillo:60.0:true:8:true
-2 - :150585887193290:1008TPS:Ford:mondeo:negro:800.0:true:9:true
-2 - :278084970201616:3057ÑKZ:Ford:Leon:Amarillo:120.0:true:9:false
-2 - :994552887433301:5885BWY:Opel:sqv:negro:120.0:true:6:true
-1 - :295646211757874:3393VMV:Opel:m3:negro:800.0:true:1744
-1 - :646638768421246:4619ZBV:Opel:amg gtr:Rojo:300.0:true:1618
-1 - :545774898273937:8690NMT:Seat:sqv:rojo:60.0:true:3971
-1 - :949277007468203:5252VCX:Seat:sqv:negro:800.0:true:4994
-1 - :890748846653399:2948YVL:Seat:opc:blanco:90.0:true:5269
-1 - :98237707088576:9389KRT:Audi:m3:Amarillo:60.0:true:1029
-1 - :182271858573001:3775DPV:Seat:opc:Verde:4000.0:true:4901
-1 - :980437987414896:9686CCP:LandRover:mondeo:Rojo:90.0:true:1788
-1 - :67267329303683:2661ÑRW:Audi:mondeo:Rojo:50.0:true:1944
-1 - :646172475466770:8952QGJ:Ford:sqv:Verde:60.0:true:4004
-0 - :603912248636304:5608BTH:Ford:Leon:morado:60.0:true:2555:1894
-0 - :903470926399924:3047QXP:Audi:Leon:Rojo:60.0:true:2344:3477
-0 - :141237865297604:6819TQÑ:Seat:sqv:blanco:120.0:true:696:4330
-0 - :994057916638410:5646YQB:Ford:amg gtr:morado:60.0:true:1112:1301
-0 - :982538952291500:3060HTS:Bmw:amg gtr:blanco:50.0:true:1679:3990
-0 - :827586853993561:4774ÑDL:LandRover:sqv:blanco:300.0:true:1486:1790
-0 - :349629686397700:0583HKP:Audi:sqv:Rojo:90.0:true:295:2826
-0 - :446752511374161:6376MFB:Seat:sqv:Rojo:90.0:true:888:2690
-0 - :131755818806066:5149VFG:Ford:rs7:Rojo:300.0:true:2299:4751
-0 - :140627207712181:7235FBQ:Bmw:opc:blanco:4000.0:true:2153:4463
+2 - :119446819418415:6900ÑSÑ:Mercedes:opc:Verde:50.0:true:2:false
+2 - :266698976345521:7207FNF:Seat:sqv:rojo:90.0:true:9:true
+2 - :458993942293378:2498QBM:LandRover:sqv:Rojo:4000.0:true:2:false
+2 - :189217974755681:5471WKK:Seat:sqv:morado:90.0:true:5:true
+2 - :111458111185136:4529MVK:Seat:rs7:Amarillo:805.0:true:2:true
+2 - :354951192288711:8462QYS:Mercedes:amg gtr:blanco:4000.0:true:6:false
+2 - :112941417354141:9239QTD:Ford:mondeo:Amarillo:50.0:true:7:false
+2 - :577416194514841:1531YZV:Citroen:sqv:blanco:805.0:true:5:true
+2 - :863141715743214:5890BMT:Opel:opc:morado:4000.0:true:8:false
+2 - :757527992659943:6766WHS:Bmw:opc:morado:300.0:true:9:false
+1 - :346911578948441:8014NSC:Opel:amg gtr:negro:4000.0:true:3037
+1 - :885778187131849:1799WHR:Citroen:amg gtr:morado:60.0:true:4700
+1 - :581762279765136:7544TPQ:Bmw:opc:Verde:4000.0:true:1748
+1 - :622731996133396:3721NRN:Citroen:m3:blanco:805.0:true:4079
+1 - :116224992126786:8755BWL:Mercedes:mondeo:Amarillo:90.0:true:2194
+1 - :818541718134687:7766BGG:Opel:Leon:negro:805.0:true:3441
+1 - :187998251514332:4651QXW:Ford:sqv:negro:805.0:true:3204
+1 - :548919619744876:7616DXP:Seat:m3:Verde:805.0:true:1381
+1 - :836318552666121:2172HCV:Opel:sqv:negro:50.0:true:1065
+1 - :161257895113625:0434KLB:Ford:Leon:rojo:4000.0:true:1846
+0 - :569217931691633:6681FNM:Seat:sqv:blanco:300.0:true:1279:3968
+0 - :946116979743135:1691HZD:Audi:rs7:rojo:120.0:true:2446:3973
+0 - :312927286171946:8624DDJ:Citroen:m3:Amarillo:805.0:true:833:1618
+0 - :723116139923922:7896JTX:Bmw:mondeo:morado:4000.0:true:1590:1817
+0 - :397941182929192:9517HÑL:Seat:sqv:negro:60.0:true:1047:2764
+0 - :536388782681826:7166PKF:LandRover:sqv:negro:90.0:true:2318:2347
+0 - :455271594666773:2374JÑT:Mercedes:amg gtr:negro:120.0:true:691:1123
+0 - :871121383115368:3611RXJ:Opel:m3:Rojo:300.0:true:1756:4950
+0 - :724315379351316:6735MTC:Seat:Leon:blanco:90.0:true:1580:1016
+0 - :275647225186128:2324ÑBÑ:Opel:rs7:morado:300.0:true:2181:1925
