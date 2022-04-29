@@ -17,8 +17,6 @@ import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
 /**
  *
  * @author imad
@@ -55,40 +53,23 @@ public class Ejer10 {
         borrarFichero("deportivos.csv");
         mostrarFicherosCarpeta("./");
         System.out.println("-------------------------vehiculos blancos---------------------------");
-//        List<Vehiculo> listaBlancos = listaVehiculos;
-//        //   Imprime por pantalla todos los coches blancos, distintos, ordenador por matrícula.
-//
-//        listaBlancos.stream()
-//                .filter(v -> v.getColor().equalsIgnoreCase("blanco"))
-//                .sorted((v1, v2) -> v1.getMatricula().compareTo(v2.getMatricula())).distinct()
-//                .collect(Collectors.toList())
-//                .forEach(System.out::println);
+
         imprimeCochesBlancos(listaVehiculos);
         System.out.println("----------------------------Marcas distintas--------------------------------------------");
-//        List<Vehiculo> listaMarcas = listaVehiculos;
-//        listaMarcas.stream()
-//                //Imprime por pantalla todas las marcas de coches distintas de aquellos coches que estén disponibles.    
-//                .filter(v -> v.isDisponible())
-//                .map(p -> p.getMarca()).distinct()
-//                .collect(Collectors.toList())
-//                .forEach(System.out::println);
+
         imprimeMarcasDistintas(listaVehiculos);
         System.out.println("--------------------------------------------------------------------");
-//        List<Vehiculo> saberCantidad = listaVehiculos;
-//        long count = saberCantidad.stream()
-//                .filter(v -> v.getMarca().equalsIgnoreCase("citroen"))
-//                //Imprime por pantalla todas las marcas de coches distintas de aquellos coches que estén disponibles.
-//                .map(p -> p.getMarca()).count();
+
         System.out.println("Cantidad de Citroen: " + saberCantidadVehiculos(listaVehiculos));
 
-        List<Vehiculo> hayNegroDispo = listaVehiculos;
-        List<Boolean> map = hayNegroDispo.stream()
-                .filter(v -> v.isDisponible() && v.getColor().equalsIgnoreCase("negro") && v.getMarca().equalsIgnoreCase("peugeot"))
-                .map(p -> p.isDisponible())
-                .collect(Collectors.toList());
+        System.out.println(hayCocheNegroDispoPeugeot(listaVehiculos));
+    }
 
-        //Solo muestra si es true
-        map.forEach(System.out::println);
+    public static boolean hayCocheNegroDispoPeugeot(ArrayList listaVehiculos) {
+        List<Vehiculo> hayNegroDispo = listaVehiculos;
+        Boolean cochesDispo = hayNegroDispo.stream()
+                .anyMatch(v -> v.isDisponible() && v.getColor().equalsIgnoreCase("negro") && v.getMarca().equalsIgnoreCase("LandRover"));
+        return cochesDispo;
     }
 
     public static long saberCantidadVehiculos(ArrayList listaVehiculos) {
@@ -105,7 +86,8 @@ public class Ejer10 {
         //   Imprime por pantalla todos los coches blancos, distintos, ordenador por matrícula.
         listaBlancos.stream()
                 .filter(v -> v.getColor().equalsIgnoreCase("blanco"))
-                .sorted((v1, v2) -> v1.getMatricula().compareTo(v2.getMatricula())).distinct()
+                .sorted((v1, v2) -> v1.getMatricula().compareTo(v2.getMatricula()))
+                .distinct()
                 .collect(Collectors.toList())
                 .forEach(System.out::println);
     }
