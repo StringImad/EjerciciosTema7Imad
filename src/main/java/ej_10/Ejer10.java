@@ -25,17 +25,17 @@ public class Ejer10 {
 
     public static void main(String[] args) {
         System.out.println("-----------------Creando directorio copias--------------------");
-        Utilidades.Servicios.crearDirectorio("Copias");
+        Utilidades.Servicios.crearDirectorio("CopiasEjer10");
         System.out.println("-----------------Copiando ficheros a carpeta copias-----------------------");
-        copiarFichero("./furgonetas.csv", "./Copias/furgonetas.csv");
-        copiarFichero("./deportivos.csv", "./Copias/deportivos.csv");
-        copiarFichero("./turismos.csv", "./Copias/turismos.csv");
+        copiarFichero("./furgonetas.csv", "./CopiasEjer10/furgonetas.csv");
+        copiarFichero("./deportivos.csv", "./CopiasEjer10/deportivos.csv");
+        copiarFichero("./turismos.csv", "./CopiasEjer10/turismos.csv");
         System.out.println("--------------------------listando ficheros en la carpeta copias----------------------------");
-        mostrarFicherosCarpeta("./Copias");
+        mostrarFicherosCarpeta("./CopiasEjer10");
 
-        leerFicherosCarpeta("./Copias");
+        leerFicherosCarpeta("./CopiasEjer10");
 
-        ArrayList<Vehiculo> listaVehiculos = leerFicherosCarpeta("./Copias");
+        ArrayList<Vehiculo> listaVehiculos = leerFicherosCarpeta("./CopiasEjer10");
 
         for (Vehiculo listaVehiculo : listaVehiculos) {
 

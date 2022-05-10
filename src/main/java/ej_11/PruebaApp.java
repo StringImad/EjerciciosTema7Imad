@@ -38,14 +38,14 @@ public class PruebaApp {
         Utilidades.Servicios.crearDirectorio("./appstxt");
         escrituraAppsTxt("./appstxt/aplicacionestxt.txt", listaApps);
         Utilidades.Servicios.crearDirectorio("./appsxml");
-        escrituraAppsTxt("./appsxml/aplicacionesxml.xml", listaApps);
+        escrituraAppsXml("./appsxml/aplicacionesxml.xml", listaApps);
         Utilidades.Servicios.crearDirectorio("./appsjson");
         escrituraAppsJson("./appsjson/aplicacionesjson.json", listaApps);
-        Utilidades.Servicios.crearDirectorio("./copias");
+       Utilidades.Servicios.crearDirectorio("./copias");
 
-        copiarFichero("./appstxt/aplicacionestxt.txt", "./copias");
-        copiarFichero("./appsxml/aplicacionesxml.xml", "./copias");
-        copiarFichero("./appsjson/aplicacionesjson.json", "./copias");
+        copiarFichero("./appstxt/aplicacionestxt.txt", "./copias/aplicacionestxt.txt");
+        copiarFichero("./appsxml/aplicacionesxml.xml", "./copias/aplicacionesxml.xml");
+        copiarFichero("./appsjson/aplicacionesjson.json", "./copias/aplicacionesjson.json");
         Utilidades.Servicios.crearDirectorio("./aplicaciones");
         for (App listaApp : listaApps) {
             escrituraAppsTxtAplicaciones("./aplicaciones/"+listaApp.getNombre(), listaApp);
@@ -158,7 +158,7 @@ public class PruebaApp {
         serializador.marshal(catalogo, System.out);
 
         // Volcado al fichero xml
-        serializador.marshal(catalogo, new File("catalogo.xml"));
+        serializador.marshal(catalogo, new File(idFichero));
 
     }
 
